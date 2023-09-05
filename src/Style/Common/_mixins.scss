@@ -1,0 +1,20 @@
+@mixin inline-animation($duration) {
+  $name: inline-#{unique-id()};
+
+  @keyframes #{$name} {
+    @content;
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+}
+
+
+@mixin text-Style($size ,$weight){
+    font-family: 'Times New Roman', Times, serif;
+    font-size: $size;
+    font-weight: $weight;
+    text-transform: capitalize;
+    text-decoration: none;
+}

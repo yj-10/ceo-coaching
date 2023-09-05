@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import Footer from "../Common/Footer";
+import WorkTogether from "../Common/WorkTogether";
+import Chead from "../Component/Contact/Chead";
+import ReadyWork from "../Component/Contact/ReadyWork";
 
 function Contact() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+    Contact
+      <Chead />
+      <ReadyWork />
+      <WorkTogether />
+      <Footer />
+    </>
+  );
 }
 
-export default Contact
+export default Contact;
