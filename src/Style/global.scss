@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import "./Component/Home/main-home";
+@import "./Component/Service/main-service";
+@import "./Component/About/main-about";
+@import "./Component/Contact/main-contact";

@@ -6,8 +6,7 @@ function Layout({children}) {
 
   return (
     <>
- 
-      {children}
+       {children}
     </>
   );
 }
