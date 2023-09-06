@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react";
+import WhatClient from "../Component/Home/WhatClient";
+import Footer from "../Common/Footer";
+import WorkTogether from "../Common/WorkTogether";
 
 function Home() {
   return (
- <>
- 
- <div>
-  Home
- </div>
- 
- </>
-  )
+    <>
+      <WhatClient />
+      <WorkTogether />
+      <Footer />
+    </>
+  );
 }
 
-export default Home
+export default Home;

@@ -7,7 +7,7 @@ import ReadyWork from "../Component/Contact/ReadyWork";
 function Contact() {
   return (
     <>
-    Contact
+    
       <Chead />
       <ReadyWork />
       <WorkTogether />
