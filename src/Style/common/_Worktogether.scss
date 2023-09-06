@@ -1,0 +1,43 @@
+@import "../utility/variable";
+
+.Work {
+  display: block;
+  position: relative;
+  margin: 10px 0px;
+  padding: 100px 0px;
+  &__head {
+    display: grid;
+    place-items: center;
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 900;
+      color: $color-black;
+    }
+    p {
+      margin-bottom: 80pxI;
+      letter-spacing: 0.9px;
+      text-align: center;
+      font-family: 300 !important;
+      font-size: 1rem;
+    }
+    button {
+      text-transform: uppercase;
+      padding: 10px 20px;
+      background-color: #2925f4;
+      color: $color-white;
+      font-size: 0.8125rem;
+      letter-spacing: 0.9px;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        background-color: $color-primary-dark;
+        color: $color-white;
+      }
+    }
+  }
+}

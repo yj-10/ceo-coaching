@@ -1,0 +1,26 @@
+@import "../utility/mixins";
+@import "../utility/variable";
+
+.Feature {
+  display: block;
+  overflow: auto;
+  position: relative;
+  padding: 100px 0px;
+  &__title {
+    text-align: center;
+    display:block;
+    position: relative;
+    
+  }
+  &__icons {
+    figure{
+        padding: 20px;
+        display: grid;
+        place-items: center;
+    }
+    // @include box-Shadow;
+    &:hover {
+      @include box-Shadow;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "../utility/variable";
+.toppic {
+  padding: 100px 0px;
+  display: block;
+  position: relative;
+
+  &__head_title {
+    h1 {
+      text-align: center;
+      color: $color-primary-dark;
+      font-size: 3rem;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+    }
+  }
+  &__box {
+    padding: 20px 5px;
+    display: block;
+    position: relative;
+    transition: all linear 0.3s;
+
+    .toppic__number {
+      h6 {
+        // background-color: red;
+        color: $blueColor;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+      }
+    }
+    .toppic__title {
+      h4 {
+        font-size: 1.2rem;
+        text-align: start;
+        font-weight: 800;
+        color: $color-primary-dark;
+      }
+    }
+
+    &:hover {
+      border-top: 1.2px solid $blueColor;
+    }
+  }
+}

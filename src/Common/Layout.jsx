@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Layout({ children }) {
   return (
     <>
-      <div className="navigation">
+      {/* <div className="navigation">
         <input
           type="checkbox"
           className="navigation__checkbox"
@@ -19,29 +20,47 @@ function Layout({ children }) {
         <nav className="navigation__nav">
           <ul className="navigation__list">
             <li className="navigation__item">
-              <a href="#link__header" className="navigation__link">
+              <Link to="/" className="navigation__link">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="navigation__item">
-              <a href="#link__project" className="navigation__link">
-                Project
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a href="#link__about" className="navigation__link">
+              <Link to="/About" className="navigation__link">
                 About
-              </a>
+              </Link>
             </li>
             <li className="navigation__item">
-              <a href="#link__contact" className="navigation__link">
+              <Link to="/Services" className="navigation__link">
+                Services
+              </Link>
+            </li>
+            <li className="navigation__item">
+              <Link to="/Contact" className="navigation__link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
-      </div>
+      </div> */}
 
+      <ul>
+        <li>
+          {" "}
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="/About">About</Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="/Services">Service</Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="/Contact">Contact</Link>
+        </li>
+      </ul>
       {children}
     </>
   );
